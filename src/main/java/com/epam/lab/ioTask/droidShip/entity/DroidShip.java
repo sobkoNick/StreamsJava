@@ -1,4 +1,4 @@
-package com.epam.lab.shipWithDroids.entity;
+package com.epam.lab.ioTask.droidShip.entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;

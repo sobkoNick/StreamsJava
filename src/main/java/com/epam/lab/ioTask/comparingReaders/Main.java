@@ -1,4 +1,4 @@
-package comparingReaders;
+package com.epam.lab.ioTask.comparingReaders;
 
 import org.apache.log4j.Logger;
 

@@ -1,6 +1,6 @@
-package com.epam.lab.shipWithDroids;
+package com.epam.lab.ioTask.droidShip;
 
-import com.epam.lab.shipWithDroids.entity.*;
+import com.epam.lab.ioTask.droidShip.entity.*;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -14,7 +14,7 @@ public class Main {
     public static final Logger LOG = Logger.getLogger(Main.class);
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        LOG.info("shipWithDroids package");
+        LOG.info("ioTask package");
         LOG.info("Main method starts");
 
         DroidShip droidShip = new DroidShip();
@@ -30,7 +30,7 @@ public class Main {
 
     private static DroidShip readObjectFromFile() throws IOException, ClassNotFoundException {
         ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("ship.dat"));
-        DroidShip readShip = (DroidShip) inputStream.readObject();
+      DroidShip readShip = (DroidShip) inputStream.readObject();
         inputStream.close();
         return readShip;
     }
