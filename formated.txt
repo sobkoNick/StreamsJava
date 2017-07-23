@@ -1,0 +1,8 @@
+Regular Expressions is a textual pattern used to search in text.
+ You do so by "matching" the regular expression against the text.
+ The result of matching a regular expression against a text is either a true / false value,  specifying if the regular expression matched the text, or a set of matches-one match for every occurrence of the regular expression found in the text.
+ For instance, you could use a regular expression to search an HTML page for email addresses,  URLs, telephone numbers etc.
+ This would be done by matching different regular expressions against the HTML page.
+ The result of matching each regular expression against the HTML page would be a set of matches-one set of matches for each regular expression(each regular expression may match more than one time).
+ Matching regular expressions against text is exactly what you can do with Java regex-the Java regular expression API.
+ 

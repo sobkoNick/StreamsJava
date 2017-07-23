@@ -33,9 +33,10 @@ public class Main {
 
     private static void readWithBufferedReaderSettingItSize(int size) {
         LOG.info(String.format("readWithBufferedReaderSettingItSize() starts with size %d", size));
-        try (BufferedReader bufferedReaderWithSize100 = new BufferedReader(new FileReader(FILE_NAME_FOR_BUFFERED), size)) {
-            while (bufferedReaderWithSize100.readLine() != null)
-                bufferedReaderWithSize100.readLine();
+        try (BufferedReader bufferedReaderWithSize = new BufferedReader(new FileReader(FILE_NAME_FOR_BUFFERED), size)) {
+            while (bufferedReaderWithSize.readLine() != null) {
+
+            }
         } catch (IOException e) {
             LOG.error(e);
         }
@@ -46,7 +47,6 @@ public class Main {
         LOG.info("readUsingFileReader() starts");
         try (FileReader fileReader = new FileReader(FILE_NAME_FOR_WRITER)) {
             while (fileReader.read() != -1) {
-                fileReader.read();
             }
         } catch (IOException e) {
             LOG.error(e);
@@ -57,8 +57,9 @@ public class Main {
     private static void readUsingBufferedReader() {
         LOG.info("readUsingBufferedReader() starts");
         try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME_FOR_BUFFERED))) {
-            while (br.readLine() != null)
-                br.readLine();
+            while (br.readLine() != null) {
+
+            }
         } catch (IOException e) {
             LOG.error(e);
         }
